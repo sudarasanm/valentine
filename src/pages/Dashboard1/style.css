@@ -1,0 +1,236 @@
+.contentStyle {
+    height: 100vh;
+    color: '#fff';
+    line-height: 160px;
+    text-align: center;
+    background: transparent;
+}
+
+.ant-card-cover {
+    height: 100%;
+    width: auto;
+}
+
+.ant-card-body {
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+    font-size: 18px;
+    flex: 1;
+    background: #41202080 !important;
+}
+
+
+.ant-card-body>.bg-image-dashboard {
+    content: "";
+    position: absolute;
+    /* top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0rem; */
+    /* background-image: url('https://wallpaperaccess.com/full/6232381.jpg'); */
+    background-size: 100%;
+    opacity: 0.2;
+    flex: 1 2 auto;
+    width: 60%;
+    height: 100%;
+}
+
+.card-layout-style {
+    width: 20vw;
+    height: 30vh;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #f3ebf6;
+}
+
+.align-layout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.current-card-1 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f3f2f2;
+    width: 100%;
+    height: 100%;
+}
+
+.slick-dots>li>button {
+    background-color: black !important;
+}
+
+#falling-hearts {
+    animation: wobble 60s ease-in infinite;
+    position: fixed;
+    inset: 0 0 0 0;
+    pointer-events: none;
+}
+
+.heart-anim-dash {
+    pointer-events: none;
+    opacity: 1;
+    z-index: 999999;
+    position: fixed;
+}
+
+/* @-webkit-keyframes wobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+} */
+
+@keyframes wobble {
+
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(10deg);
+    }
+
+    75% {
+        transform: rotate(-10deg);
+    }
+}
+
+.hearts {
+    width: 70%;
+    min-width: 100px;
+    height: 100%;
+    min-height: 250px;
+    position: absolute;
+    z-index: 10;
+}
+
+.heart-11 {
+    position: absolute;
+    height: 5%;
+    min-height: 25px;
+    width: 5%;
+    min-width: 25px;
+    background-color: red;
+    -webkit-mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>');
+    mask-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path></svg>');
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+    mask-position: bottom;
+    opacity: 0;
+    animation: floating-heart 30s infinite cubic-bezier(0.5, 0.5, 0.5, 0.5);
+}
+
+@keyframes floating-heart {
+    0% {
+        opacity: 0;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    10% {
+        opacity: 1;
+        bottom: 20%;
+        left: 70%;
+    }
+
+    20% {
+        bottom: 40%;
+        left: 10%;
+    }
+
+    30% {
+        bottom: 60%;
+        left: 50%;
+    }
+
+    40% {
+        opacity: 1;
+        bottom: 80%;
+        left: 5%;
+    }
+
+    48% {
+        opacity: 0;
+        bottom: 100%;
+        left: 60%;
+    }
+
+    100% {
+        opacity: 0;
+        bottom: 100%;
+        left: 90%;
+    }
+}
+
+.heart-11:nth-child(1) {
+    animation-delay: 1s;
+}
+
+.heart-11:nth-child(2) {
+    animation-delay: 2.5s;
+}
+
+.heart-11:nth-child(3) {
+    animation-delay: 3.5s;
+}
+
+.heart-11:nth-child(4) {
+    animation-delay: 4.5s;
+}
+
+.heart-11:nth-child(5) {
+    animation-delay: 5s;
+}
+
+.heart-11:nth-child(6) {
+    animation-delay: 6.5s;
+}
+
+.heart-11:nth-child(7) {
+    animation-delay: 7.5s;
+}
+
+.heart-11:nth-child(8) {
+    animation-delay: 8.5s;
+}
+
+.ant-carousel .slick-prev,
+.ant-carousel .slick-prev:hover,
+.ant-carousel .slick-prev:focus {
+    font-size: 2rem;
+    left: 10px;
+    z-index: 2;
+    color: rgb(61, 31, 57);
+}
+
+.ant-carousel .slick-next,
+.ant-carousel .slick-next:hover,
+.ant-carousel .slick-next:focus {
+    font-size: 2rem;
+    right: 10px;
+    z-index: 2;
+    color: rgb(61, 31, 57);
+}
+

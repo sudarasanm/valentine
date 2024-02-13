@@ -1,0 +1,29 @@
+.ant-card-cover {
+    height: 100%;
+    width: 100%;
+}
+
+.card-layout-style {
+    width: 20vw;
+    height: 30vh;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: #f3ebf6;
+}
+
+.align-layout {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.current-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: #f3f2f2;
+    width: 100%;
+    height: 50%;
+}
